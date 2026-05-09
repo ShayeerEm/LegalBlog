@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Legal blog by [Your Name] — analysis, commentary, and writing on law and commerce." />
+  <title>Legal Blog — [Your Name]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-name">[Your Name]</span>
+        <span class="nav__logo-title">Law · Commerce · Creator</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="experience.html" class="nav__link">Experience</a></li>
+        <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__theme-btn" id="theme-toggle" aria-label="Toggle theme">☀</button>
+        <a href="contact.html" class="nav__cta">Get in Touch</a>
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="nav-mobile">
+    <a href="index.html" class="nav__mobile-link">Home</a>
+    <a href="about.html" class="nav__mobile-link">About</a>
+    <a href="experience.html" class="nav__mobile-link">Experience</a>
+    <a href="portfolio.html" class="nav__mobile-link">Portfolio</a>
+    <a href="blog.html" class="nav__mobile-link">Blog</a>
+    <a href="contact.html" class="nav__mobile-link">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-hero__eyebrow">Legal Analysis &amp; Commentary</p>
+        <h1 class="page-hero__title">The Legal<br /><span class="gradient-text">Blog</span></h1>
+        <p class="page-hero__subtitle">
+          Rigorous analysis, clear writing, and original thinking on the legal and commercial questions
+          that matter. Written by a student — for anyone who wants to understand the law.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         BLOG LAYOUT
+         ====================================================== -->
+    <section class="section">
+      <div class="container container--wide">
+        <div class="blog-layout">
+
+          <!-- Main Content -->
+          <div>
+
+            <!-- Search -->
+            <div class="blog-search animate-on-scroll">
+              <span class="blog-search__icon">⌕</span>
+              <input
+                type="search"
+                class="blog-search__input"
+                id="blog-search"
+                placeholder="Search articles..."
+                aria-label="Search blog posts"
+              />
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs animate-on-scroll">
+              <button class="filter-tab is-active" data-filter="all">All Articles</button>
+              <button class="filter-tab" data-filter="constitutional">Constitutional</button>
+              <button class="filter-tab" data-filter="contract">Contract Law</button>
+              <button class="filter-tab" data-filter="commercial">Commercial</button>
+              <button class="filter-tab" data-filter="tort">Tort</button>
+              <button class="filter-tab" data-filter="commentary">Commentary</button>
+            </div>
+
+            <!-- Featured Post -->
+            <div class="blog-featured-post blog-post-item animate-on-scroll" data-category="constitutional">
+              <article class="blog-card card">
+                <div class="blog-card__img" style="background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));">
+                  <div class="blog-card__img-placeholder">§</div>
+                </div>
+                <div class="blog-card__body">
+                  <div class="blog-card__meta">
+                    <span class="blog-card__category">Constitutional Law</span>
+                    <span class="blog-card__date">[Month Year]</span>
+                    <span class="blog-card__read-time">8 min read</span>
+                  </div>
+                  <h2 class="blog-card__title" style="font-size:1.6rem;">
+                    [Your Featured Article Title — Make It Sound Sophisticated and Analytical]
+                  </h2>
+                  <p class="blog-card__excerpt" style="font-size:0.95rem;">
+                    [Write a compelling excerpt — 2-3 sentences that draw the reader in and make them want to click.
+                    Reference the key legal question, the cases you analyse, or the conclusion you reach.
+                    This is the hook. Make it count.]
+                  </p>
+                  <div class="blog-card__footer">
+                    <div class="blog-card__author">
+                      <div class="blog-card__avatar">YN</div>
+                      [Your Name]
+                    </div>
+                    <a href="blog-post.html" class="btn btn--ghost btn--sm">Read Article →</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Post Grid -->
+            <div class="blog-main-grid" style="margin-top:1.5rem;">
+
+              <div class="blog-post-item animate-on-scroll" data-category="contract">
+                <article class="blog-card card">
+                  <div class="blog-card__img">
+                    <div class="blog-card__img-placeholder">⚖</div>
+                  </div>
+                  <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                      <span class="blog-card__category">Contract Law</span>
+                      <span class="blog-card__date">[Month Year]</span>
+                      <span class="blog-card__read-time">6 min</span>
+                    </div>
+                    <h3 class="blog-card__title">[Article Title on Contract Law]</h3>
+                    <p class="blog-card__excerpt">[Brief, punchy excerpt that captures the article's argument.]</p>
+                    <div class="blog-card__footer">
+                      <div class="blog-card__author">
+                        <div class="blog-card__avatar">YN</div>
+                        [Your Name]
+                      </div>
+                      <a href="blog-post.html" class="blog-card__read-link">Read →</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-post-item animate-on-scroll" data-category="commercial">
+                <article class="blog-card card">
+                  <div class="blog-card__img">
+                    <div class="blog-card__img-placeholder">$</div>
+                  </div>
+                  <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                      <span class="blog-card__category">Commercial Law</span>
+                      <span class="blog-card__date">[Month Year]</span>
+                      <span class="blog-card__read-time">7 min</span>
+                    </div>
+                    <h3 class="blog-card__title">[Article Title on Commercial / Corporate Law]</h3>
+                    <p class="blog-card__excerpt">[Brief, punchy excerpt that captures the article's argument.]</p>
+                    <div class="blog-card__footer">
+                      <div class="blog-card__avatar">YN</div>
+                      <a href="blog-post.html" class="blog-card__read-link">Read →</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-post-item animate-on-scroll" data-category="tort">
+                <article class="blog-card card">
+                  <div class="blog-card__img">
+                    <div class="blog-card__img-placeholder">⚡</div>
+                  </div>
+                  <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                      <span class="blog-card__category">Tort Law</span>
+                      <span class="blog-card__date">[Month Year]</span>
+                      <span class="blog-card__read-time">5 min</span>
+                    </div>
+                    <h3 class="blog-card__title">[Article Title on Tort Law]</h3>
+                    <p class="blog-card__excerpt">[Brief excerpt.]</p>
+                    <div class="blog-card__footer">
+                      <div class="blog-card__avatar">YN</div>
+                      <a href="blog-post.html" class="blog-card__read-link">Read →</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-post-item animate-on-scroll" data-category="commentary">
+                <article class="blog-card card">
+                  <div class="blog-card__img">
+                    <div class="blog-card__img-placeholder">💭</div>
+                  </div>
+                  <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                      <span class="blog-card__category">Commentary</span>
+                      <span class="blog-card__date">[Month Year]</span>
+                      <span class="blog-card__read-time">4 min</span>
+                    </div>
+                    <h3 class="blog-card__title">[Opinion or Commentary Piece on Legal/Social Topic]</h3>
+                    <p class="blog-card__excerpt">[Brief excerpt.]</p>
+                    <div class="blog-card__footer">
+                      <div class="blog-card__avatar">YN</div>
+                      <a href="blog-post.html" class="blog-card__read-link">Read →</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-post-item animate-on-scroll" data-category="constitutional">
+                <article class="blog-card card">
+                  <div class="blog-card__img">
+                    <div class="blog-card__img-placeholder">🏛</div>
+                  </div>
+                  <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                      <span class="blog-card__category">Constitutional Law</span>
+                      <span class="blog-card__date">[Month Year]</span>
+                      <span class="blog-card__read-time">9 min</span>
+                    </div>
+                    <h3 class="blog-card__title">[Second Constitutional Law Article]</h3>
+                    <p class="blog-card__excerpt">[Brief excerpt.]</p>
+                    <div class="blog-card__footer">
+                      <div class="blog-card__avatar">YN</div>
+                      <a href="blog-post.html" class="blog-card__read-link">Read →</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-post-item animate-on-scroll" data-category="commercial">
+                <article class="blog-card card">
+                  <div class="blog-card__img">
+                    <div class="blog-card__img-placeholder">📈</div>
+                  </div>
+                  <div class="blog-card__body">
+                    <div class="blog-card__meta">
+                      <span class="blog-card__category">Commercial Law</span>
+                      <span class="blog-card__date">[Month Year]</span>
+                      <span class="blog-card__read-time">6 min</span>
+                    </div>
+                    <h3 class="blog-card__title">[Law &amp; Finance Intersection Article]</h3>
+                    <p class="blog-card__excerpt">[Brief excerpt on how law intersects with commercial/financial matters.]</p>
+                    <div class="blog-card__footer">
+                      <div class="blog-card__avatar">YN</div>
+                      <a href="blog-post.html" class="blog-card__read-link">Read →</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+            <!-- end post grid -->
+
+          </div>
+          <!-- end main -->
+
+          <!-- Sidebar -->
+          <aside class="blog-sidebar">
+
+            <div class="sidebar-widget animate-on-scroll">
+              <h3 class="sidebar-widget__title">About the Author</h3>
+              <div style="display:flex; align-items:center; gap:0.875rem; margin-bottom:1rem;">
+                <div style="width:52px; height:52px; border-radius:50%; background:var(--accent-dim); border:1px solid var(--border-light); display:flex; align-items:center; justify-content:center; font-family:var(--font-heading); font-size:1.1rem; color:var(--accent); font-weight:600; flex-shrink:0;">YN</div>
+                <div>
+                  <div style="font-weight:600; font-size:0.95rem;">[Your Name]</div>
+                  <div style="font-size:0.75rem; color:var(--text-muted);">Law &amp; Commerce Student</div>
+                </div>
+              </div>
+              <p style="font-size:0.82rem; color:var(--text-secondary); line-height:1.7; margin-bottom:1rem;">
+                [Brief bio — 1-2 sentences. Who you are, what you study, why you write.]
+              </p>
+              <a href="about.html" class="btn btn--ghost btn--sm" style="width:100%; justify-content:center;">View Profile</a>
+            </div>
+
+            <div class="sidebar-widget animate-on-scroll">
+              <h3 class="sidebar-widget__title">Categories</h3>
+              <div class="sidebar-categories">
+                <div class="sidebar-category is-active" data-category="all">
+                  All Articles <span class="sidebar-category__count">12</span>
+                </div>
+                <div class="sidebar-category" data-category="constitutional">
+                  Constitutional Law <span class="sidebar-category__count">3</span>
+                </div>
+                <div class="sidebar-category" data-category="contract">
+                  Contract Law <span class="sidebar-category__count">2</span>
+                </div>
+                <div class="sidebar-category" data-category="commercial">
+                  Commercial Law <span class="sidebar-category__count">3</span>
+                </div>
+                <div class="sidebar-category" data-category="tort">
+                  Tort Law <span class="sidebar-category__count">2</span>
+                </div>
+                <div class="sidebar-category" data-category="commentary">
+                  Commentary <span class="sidebar-category__count">2</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-widget animate-on-scroll">
+              <h3 class="sidebar-widget__title">Topics</h3>
+              <div class="sidebar-topics">
+                <span class="tag tag--accent">Case Analysis</span>
+                <span class="tag">Statute Interpretation</span>
+                <span class="tag">Judicial Reasoning</span>
+                <span class="tag">Corporate Law</span>
+                <span class="tag">Human Rights</span>
+                <span class="tag">Equity</span>
+                <span class="tag">Evidence</span>
+                <span class="tag">Comparative Law</span>
+                <span class="tag">Legal Theory</span>
+                <span class="tag">Regulatory Law</span>
+              </div>
+            </div>
+
+            <div class="sidebar-widget animate-on-scroll">
+              <h3 class="sidebar-widget__title">Notable Cases Discussed</h3>
+              <div style="display:flex; flex-direction:column; gap:0.625rem;">
+                <div style="font-size:0.82rem; color:var(--text-secondary); padding:0.5rem 0; border-bottom:1px solid var(--border); font-style:italic;">[Case Name v Case Name [Year]]</div>
+                <div style="font-size:0.82rem; color:var(--text-secondary); padding:0.5rem 0; border-bottom:1px solid var(--border); font-style:italic;">[Case Name v Case Name [Year]]</div>
+                <div style="font-size:0.82rem; color:var(--text-secondary); padding:0.5rem 0; border-bottom:1px solid var(--border); font-style:italic;">[Case Name v Case Name [Year]]</div>
+                <div style="font-size:0.82rem; color:var(--text-secondary); padding:0.5rem 0; font-style:italic;">[Case Name v Case Name [Year]]</div>
+              </div>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand-name">[Your Name]</div>
+          <div class="footer__brand-title">Law · Commerce · Creator</div>
+          <p class="footer__brand-desc">Law and Commerce student, legal blogger, entrepreneur, and artist.</p>
+        </div>
+        <div>
+          <p class="footer__col-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+            <li><a href="experience.html" class="footer__link">Experience</a></li>
+            <li><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Blog</p>
+          <ul class="footer__links">
+            <li><a href="blog.html" class="footer__link">All Articles</a></li>
+            <li><a href="blog.html" class="footer__link">Constitutional Law</a></li>
+            <li><a href="blog.html" class="footer__link">Commercial Law</a></li>
+            <li><a href="blog.html" class="footer__link">Commentary</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Connect</p>
+          <ul class="footer__links">
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+            <li><a href="#" class="footer__link">LinkedIn</a></li>
+            <li><a href="#" class="footer__link">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© <span id="footer-year"></span> [Your Name]. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy</a>
+          <a href="#" class="footer__bottom-link">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
