@@ -566,7 +566,7 @@ p { color: var(--text-secondary); line-height: 1.8; }
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: var(--nav-height) 0 0;
+  padding: var(--nav-height) 0 5rem;
 }
 
 .hero__bg {
